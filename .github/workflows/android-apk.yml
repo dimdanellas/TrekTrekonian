@@ -45,7 +45,7 @@ jobs:
           restore-keys: buildozer-
 
       - name: Build APK
-        run: android/build_apk.sh
+        run: bash android/build_apk.sh
 
       - uses: actions/upload-artifact@v4
         with:
