@@ -39,6 +39,8 @@ android.release_artifact = apk
 
 # FFmpeg recipe override that also ships ffprobe (see android/recipes/ffmpeg).
 p4a.local_recipes = ./android/recipes
+# Set by android/build_apk.sh to a pinned python-for-android release (empty = clone master).
+p4a.source_dir =
 p4a.bootstrap = sdl2
 
 [buildozer]

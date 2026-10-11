@@ -31,6 +31,7 @@ if [ ! -d "$P4A_DIR" ]; then
   "$VENV/bin/pip" install -q -e "$P4A_DIR"
 fi
 export APP_P4A_SOURCE_DIR="$PWD/$P4A_DIR"
+export VIRTUAL_ENV="$PWD/$VENV"  # Buildozer installs p4a's dependencies into this venv
 
 PATH="$PWD/$VENV/bin:$PATH" buildozer android debug
 ls -lh bin/*.apk
