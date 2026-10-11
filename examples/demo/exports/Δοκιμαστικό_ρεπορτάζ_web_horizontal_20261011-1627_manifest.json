@@ -1,0 +1,128 @@
+{
+  "application": "Automated News Package Editor 1.0.0",
+  "created": "2026-10-11T16:27:58+00:00",
+  "project": {
+    "id": "a1a57d49e5844a4c9e53faa8351ae923",
+    "title": "Δοκιμαστικό ρεπορτάζ",
+    "target_seconds": 40.0,
+    "duration_override": false,
+    "duration_override_reason": ""
+  },
+  "profile": {
+    "label": "Web/Social — Horizontal",
+    "container": "mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "scan": "progressive",
+    "vcodec": "libx264",
+    "crf": 18,
+    "preset": "medium",
+    "pix_fmt": "yuv420p",
+    "acodec": "aac",
+    "abitrate_kbps": 192,
+    "sample_rate": 48000,
+    "channels": 2,
+    "vertical_framing": "blur",
+    "key": "web_horizontal"
+  },
+  "final_duration_seconds": 25.04,
+  "final_frames": 626,
+  "fps": 25,
+  "segments": [
+    {
+      "segment": "Narration 1",
+      "kind": "narration",
+      "start_frame": 0,
+      "duration_frames": 150,
+      "visual": "βουλή_broll.mp4",
+      "visual_in": 0.0,
+      "visual_out": 8.0,
+      "fill_policy": "none",
+      "narration_source": "recorded",
+      "provider": ""
+    },
+    {
+      "segment": "SOUNDBITE_1",
+      "kind": "soundbite",
+      "start_frame": 150,
+      "duration_frames": 125,
+      "file": "δήλωση_Α.mp4",
+      "source_in": 0.5,
+      "source_out": 5.5
+    },
+    {
+      "segment": "Narration 2",
+      "kind": "narration",
+      "start_frame": 275,
+      "duration_frames": 138,
+      "visual": "χάρτης.jpg",
+      "visual_in": 0.0,
+      "visual_out": null,
+      "fill_policy": "none",
+      "narration_source": "recorded",
+      "provider": ""
+    },
+    {
+      "segment": "SOUNDBITE_2",
+      "kind": "soundbite",
+      "start_frame": 413,
+      "duration_frames": 113,
+      "file": "δήλωση_Β_κάθετη.mp4",
+      "source_in": 0.0,
+      "source_out": 4.5
+    },
+    {
+      "segment": "Narration 3",
+      "kind": "narration",
+      "start_frame": 526,
+      "duration_frames": 100,
+      "visual": "δρόμος_broll.mp4",
+      "visual_in": 0.0,
+      "visual_out": 3.0,
+      "fill_policy": "hold",
+      "narration_source": "recorded",
+      "provider": ""
+    }
+  ],
+  "music": {
+    "file": "μουσική.wav",
+    "base_db": -18.0,
+    "duck_db": 20.0,
+    "policy": "duck"
+  },
+  "audio": {
+    "peak_dbfs": -10.71,
+    "applied_gain_db": 0.0,
+    "loudness_lufs": null
+  },
+  "verification": {
+    "video_codec": "h264",
+    "profile": "High",
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "25/1",
+    "frames": 626,
+    "pix_fmt": "yuv420p",
+    "field_order": "progressive",
+    "duration": 25.04,
+    "audio_codec": "aac",
+    "audio_sample_rate": "48000",
+    "audio_channels": 2,
+    "decoded_ok": true
+  },
+  "warnings_acknowledged": [
+    "SOUNDBITE_1 cue 1: 23 characters/second exceeds the 17 cps reading-speed heuristic.",
+    "SOUNDBITE_1 cue 2: 19 characters/second exceeds the 17 cps reading-speed heuristic.",
+    "SOUNDBITE_2 cue 2: 22 characters/second exceeds the 17 cps reading-speed heuristic."
+  ],
+  "outputs": [
+    "Δοκιμαστικό_ρεπορτάζ_web_horizontal_20261011-1627.mp4",
+    "Δοκιμαστικό_ρεπορτάζ_web_horizontal_20261011-1627.srt",
+    "Δοκιμαστικό_ρεπορτάζ_web_horizontal_20261011-1627.ass",
+    "Δοκιμαστικό_ρεπορτάζ_web_horizontal_20261011-1627_prompter.txt",
+    "Δοκιμαστικό_ρεπορτάζ_web_horizontal_20261011-1627_rundown.csv",
+    "Δοκιμαστικό_ρεπορτάζ_web_horizontal_20261011-1627_segments.csv",
+    "Δοκιμαστικό_ρεπορτάζ_web_horizontal_20261011-1627_voice_over.wav"
+  ]
+}

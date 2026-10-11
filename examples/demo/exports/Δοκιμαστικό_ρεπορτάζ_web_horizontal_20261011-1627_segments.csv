@@ -1,0 +1,6 @@
+﻿"index","segment","start_tc","end_tc","duration_seconds","visual_asset","source_in","audio_type","lower_third"
+"1","Narration 1","00:00:00:00","00:00:06:00","6.00","βουλή_broll.mp4","0.000","narration",""
+"2","SOUNDBITE_1","00:00:06:00","00:00:11:00","5.00","δήλωση_Α.mp4","0.500","original statement audio","Ομιλητής Α (δοκιμαστικό όνομα) — Δοκιμαστικός ρόλος"
+"3","Narration 2","00:00:11:00","00:00:16:13","5.52","χάρτης.jpg","0.000","narration",""
+"4","SOUNDBITE_2","00:00:16:13","00:00:21:01","4.52","δήλωση_Β_κάθετη.mp4","0.000","original statement audio","Ομιλήτρια Β — Εκπρόσωπος δοκιμής"
+"5","Narration 3","00:00:21:01","00:00:25:01","4.00","δρόμος_broll.mp4","0.000","narration",""

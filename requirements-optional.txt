@@ -1,0 +1,4 @@
+# Local Whisper transcription (CPU by default; downloads the chosen model on first use)
+faster-whisper==1.2.1
+# Optional: remember the ElevenLabs API key in the OS keychain
+keyring

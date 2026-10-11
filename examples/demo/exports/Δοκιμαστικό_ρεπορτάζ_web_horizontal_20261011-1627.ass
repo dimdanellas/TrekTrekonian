@@ -1,0 +1,17 @@
+[Script Info]
+ScriptType: v4.00+
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,44,&H00FFFFFF,&H00FFFFFF,&H72000000,&H72000000,0,0,0,0,100,100,0,0,3,0,0,2,20,20,54,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.20,0:00:08.40,Default,,0,0,198,,Αυτή είναι μια δοκιμαστική\Nδήλωση με συνθετικό ήχο.
+Dialogue: 0,0:00:08.50,0:00:10.80,Default,,0,0,198,,Ο υπότιτλος ελέγχει\Nτο χρονισμό και τη θέση.
+Dialogue: 0,0:00:16.82,0:00:18.72,Default,,0,0,54,,Δεύτερη δοκιμαστική δήλωση.
+Dialogue: 0,0:00:18.82,0:00:20.82,Default,,0,0,54,,Ξεκινά από τη δική\Nτης θέση στο χρονολόγιο.

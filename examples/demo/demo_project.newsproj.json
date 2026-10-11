@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "id": "a1a57d49e5844a4c9e53faa8351ae923",
+  "title": "Δοκιμαστικό ρεπορτάζ",
+  "target_seconds": 40.0,
+  "wpm": 140.0,
+  "script": "[NOTE: Δοκιμαστικό ρεπορτάζ με συνθετικό υλικό. Δεν περιέχει πραγματικές δηλώσεις.]\n[BROLL_1]\nΗ κυβέρνηση παρουσίασε σήμερα τις νέες προτάσεις της για τη δοκιμαστική ενότητα του ρεπορτάζ.\n[SOUNDBITE_1]\n[IMAGE_1]\nΗ αντιπολίτευση απάντησε με διαφορετικές προτεραιότητες, σύμφωνα με το δοκιμαστικό σενάριο.\n[SOUNDBITE_2]\n[BROLL_2]\nΟι επόμενες ημέρες θα δείξουν την πορεία της συζήτησης.\n",
+  "assets": [
+    {
+      "id": "sb_4ea732cc",
+      "kind": "soundbite",
+      "path": "media/δήλωση_Α.mp4",
+      "name": "δήλωση_Α.mp4",
+      "meta": {
+        "warnings": [],
+        "duration": 6.0,
+        "has_video": true,
+        "has_audio": true,
+        "is_image": false,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "width": 1280,
+        "height": 720,
+        "fps": 25.0,
+        "rotation": 0,
+        "vcodec": "h264",
+        "field_order": "progressive",
+        "pix_fmt": "yuv420p",
+        "acodec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      }
+    },
+    {
+      "id": "sb_d2e9ef6e",
+      "kind": "soundbite",
+      "path": "media/δήλωση_Β_κάθετη.mp4",
+      "name": "δήλωση_Β_κάθετη.mp4",
+      "meta": {
+        "warnings": [],
+        "duration": 5.0,
+        "has_video": true,
+        "has_audio": true,
+        "is_image": false,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "width": 720,
+        "height": 1280,
+        "fps": 25.0,
+        "rotation": 0,
+        "vcodec": "h264",
+        "field_order": "progressive",
+        "pix_fmt": "yuv420p",
+        "acodec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      }
+    },
+    {
+      "id": "br_322b7bd1",
+      "kind": "broll",
+      "path": "media/βουλή_broll.mp4",
+      "name": "βουλή_broll.mp4",
+      "meta": {
+        "warnings": [],
+        "duration": 8.0,
+        "has_video": true,
+        "has_audio": true,
+        "is_image": false,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "width": 1920,
+        "height": 1080,
+        "fps": 25.0,
+        "rotation": 0,
+        "vcodec": "h264",
+        "field_order": "progressive",
+        "pix_fmt": "yuv420p",
+        "acodec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      }
+    },
+    {
+      "id": "br_f83ac622",
+      "kind": "broll",
+      "path": "media/δρόμος_broll.mp4",
+      "name": "δρόμος_broll.mp4",
+      "meta": {
+        "warnings": [],
+        "duration": 3.0,
+        "has_video": true,
+        "has_audio": false,
+        "is_image": false,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "width": 1440,
+        "height": 1080,
+        "fps": 25.0,
+        "rotation": 0,
+        "vcodec": "h264",
+        "field_order": "progressive",
+        "pix_fmt": "yuv420p"
+      }
+    },
+    {
+      "id": "im_b5375776",
+      "kind": "image",
+      "path": "media/χάρτης.jpg",
+      "name": "χάρτης.jpg",
+      "meta": {
+        "warnings": [],
+        "width": 1600,
+        "height": 1600,
+        "has_video": true,
+        "has_audio": false,
+        "is_image": true,
+        "duration": null,
+        "fps": null,
+        "rotation": 0,
+        "exif_rotated": false
+      }
+    },
+    {
+      "id": "mu_7e9c1665",
+      "kind": "music",
+      "path": "media/μουσική.wav",
+      "name": "μουσική.wav",
+      "meta": {
+        "warnings": [],
+        "duration": 20.0,
+        "has_video": false,
+        "has_audio": true,
+        "is_image": false,
+        "format_name": "wav",
+        "acodec": "pcm_s24le",
+        "sample_rate": 48000,
+        "channels": 2
+      }
+    },
+    {
+      "id": "lg_336d30c8",
+      "kind": "logo",
+      "path": "media/logo.png",
+      "name": "logo.png",
+      "meta": {
+        "warnings": [],
+        "width": 400,
+        "height": 200,
+        "has_video": true,
+        "has_audio": false,
+        "is_image": true,
+        "duration": null,
+        "fps": null,
+        "rotation": 0,
+        "exif_rotated": false
+      }
+    },
+    {
+      "id": "fx_8076043c",
+      "kind": "sfx",
+      "path": "media/whoosh.wav",
+      "name": "whoosh.wav",
+      "meta": {
+        "warnings": [],
+        "duration": 0.8,
+        "has_video": false,
+        "has_audio": true,
+        "is_image": false,
+        "format_name": "wav",
+        "acodec": "pcm_s24le",
+        "sample_rate": 48000,
+        "channels": 2
+      }
+    }
+  ],
+  "bindings": {
+    "BROLL_1": {
+      "label": "BROLL_1",
+      "asset_id": "br_322b7bd1",
+      "in_seconds": 0.0,
+      "out_seconds": 8.0,
+      "fill_policy": "none",
+      "resize_mode": null,
+      "crop_x": 0.0,
+      "crop_y": 0.0,
+      "ambience_db": null,
+      "silent": false,
+      "language": "el",
+      "gain_db": 0.0,
+      "card_title": "",
+      "card_body": "",
+      "card_seconds": 4.0,
+      "card_background_asset_id": null,
+      "card_color": "#102040"
+    },
+    "SOUNDBITE_1": {
+      "label": "SOUNDBITE_1",
+      "asset_id": "sb_4ea732cc",
+      "in_seconds": 0.5,
+      "out_seconds": 5.5,
+      "fill_policy": "none",
+      "resize_mode": null,
+      "crop_x": 0.0,
+      "crop_y": 0.0,
+      "ambience_db": null,
+      "silent": false,
+      "language": "el",
+      "gain_db": 0.0,
+      "card_title": "",
+      "card_body": "",
+      "card_seconds": 4.0,
+      "card_background_asset_id": null,
+      "card_color": "#102040"
+    },
+    "IMAGE_1": {
+      "label": "IMAGE_1",
+      "asset_id": "im_b5375776",
+      "in_seconds": 0.0,
+      "out_seconds": null,
+      "fill_policy": "none",
+      "resize_mode": null,
+      "crop_x": 0.0,
+      "crop_y": 0.0,
+      "ambience_db": null,
+      "silent": false,
+      "language": "el",
+      "gain_db": 0.0,
+      "card_title": "",
+      "card_body": "",
+      "card_seconds": 4.0,
+      "card_background_asset_id": null,
+      "card_color": "#102040"
+    },
+    "SOUNDBITE_2": {
+      "label": "SOUNDBITE_2",
+      "asset_id": "sb_d2e9ef6e",
+      "in_seconds": 0.0,
+      "out_seconds": 4.5,
+      "fill_policy": "none",
+      "resize_mode": null,
+      "crop_x": 0.0,
+      "crop_y": 0.0,
+      "ambience_db": null,
+      "silent": false,
+      "language": "el",
+      "gain_db": 0.0,
+      "card_title": "",
+      "card_body": "",
+      "card_seconds": 4.0,
+      "card_background_asset_id": null,
+      "card_color": "#102040"
+    },
+    "BROLL_2": {
+      "label": "BROLL_2",
+      "asset_id": "br_f83ac622",
+      "in_seconds": 0.0,
+      "out_seconds": 3.0,
+      "fill_policy": "hold",
+      "resize_mode": null,
+      "crop_x": 0.0,
+      "crop_y": 0.0,
+      "ambience_db": null,
+      "silent": false,
+      "language": "el",
+      "gain_db": 0.0,
+      "card_title": "",
+      "card_body": "",
+      "card_seconds": 4.0,
+      "card_background_asset_id": null,
+      "card_color": "#102040"
+    }
+  },
+  "narration": {
+    "mode": "manual",
+    "provider": "gtts",
+    "language": "el",
+    "voice_id": "",
+    "voice_name": "",
+    "model_id": "eleven_multilingual_v2",
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "gtts_tld": "com",
+    "gtts_slow": false,
+    "fallback_provider": "gtts",
+    "input_device": null,
+    "takes": [],
+    "blocks": [
+      {
+        "block_index": 0,
+        "text_hash": "2f748c3d67fec600",
+        "text": "Η κυβέρνηση παρουσίασε σήμερα τις νέες προτάσεις της για τη δοκιμαστική ενότητα του ρεπορτάζ.",
+        "source": "recorded",
+        "wav_path": "media/narration_01.wav",
+        "take_id": null,
+        "take_in": 0.0,
+        "take_out": 0.0,
+        "provider": "",
+        "voice": "",
+        "trim_head": 0.0,
+        "trim_tail": 0.0,
+        "duration": 6.0
+      },
+      {
+        "block_index": 1,
+        "text_hash": "33bed070950359aa",
+        "text": "Η αντιπολίτευση απάντησε με διαφορετικές προτεραιότητες, σύμφωνα με το δοκιμαστικό σενάριο.",
+        "source": "recorded",
+        "wav_path": "media/narration_02.wav",
+        "take_id": null,
+        "take_in": 0.0,
+        "take_out": 0.0,
+        "provider": "",
+        "voice": "",
+        "trim_head": 0.0,
+        "trim_tail": 0.0,
+        "duration": 5.5
+      },
+      {
+        "block_index": 2,
+        "text_hash": "97eba2be32af0ff6",
+        "text": "Οι επόμενες ημέρες θα δείξουν την πορεία της συζήτησης.",
+        "source": "recorded",
+        "wav_path": "media/narration_03.wav",
+        "take_id": null,
+        "take_in": 0.0,
+        "take_out": 0.0,
+        "provider": "",
+        "voice": "",
+        "trim_head": 0.0,
+        "trim_tail": 0.0,
+        "duration": 4.0
+      }
+    ]
+  },
+  "lower_thirds": [
+    {
+      "binding_label": "SOUNDBITE_1",
+      "name": "Ομιλητής Α (δοκιμαστικό όνομα)",
+      "role": "Δοκιμαστικός ρόλος",
+      "start_offset": 0.3,
+      "end_offset": 4.0,
+      "fade_seconds": 0.3
+    },
+    {
+      "binding_label": "SOUNDBITE_2",
+      "name": "Ομιλήτρια Β",
+      "role": "Εκπρόσωπος δοκιμής",
+      "start_offset": 0.3,
+      "end_offset": 4.0,
+      "fade_seconds": 0.3
+    }
+  ],
+  "subtitle_tracks": {
+    "SOUNDBITE_1": {
+      "label": "SOUNDBITE_1",
+      "language": "el",
+      "source": "manual",
+      "model": "",
+      "clip_in": 0.5,
+      "clip_out": 5.5,
+      "reviewed": true,
+      "cues": [
+        {
+          "start": 0.2,
+          "end": 2.4,
+          "text": "Αυτή είναι μια δοκιμαστική δήλωση με συνθετικό ήχο.",
+          "words": []
+        },
+        {
+          "start": 2.5,
+          "end": 4.8,
+          "text": "Ο υπότιτλος ελέγχει το χρονισμό και τη θέση.",
+          "words": []
+        }
+      ]
+    },
+    "SOUNDBITE_2": {
+      "label": "SOUNDBITE_2",
+      "language": "el",
+      "source": "manual",
+      "model": "",
+      "clip_in": 0.0,
+      "clip_out": 4.5,
+      "reviewed": true,
+      "cues": [
+        {
+          "start": 0.3,
+          "end": 2.2,
+          "text": "Δεύτερη δοκιμαστική δήλωση.",
+          "words": []
+        },
+        {
+          "start": 2.3,
+          "end": 4.3,
+          "text": "Ξεκινά από τη δική της θέση στο χρονολόγιο.",
+          "words": []
+        }
+      ]
+    }
+  },
+  "subtitles": {
+    "burn_in": true,
+    "narration_captions": false,
+    "max_chars": 42,
+    "max_lines": 2,
+    "min_duration": 1.0,
+    "max_duration": 6.0,
+    "max_cps": 17.0,
+    "style": "box",
+    "box_opacity": 0.55,
+    "outline_px_1080": 2.0,
+    "font_size_1080": 44,
+    "font_path": null,
+    "whisper_model": "small",
+    "whisper_device": "cpu",
+    "write_srt": true,
+    "write_ass": true
+  },
+  "music": {
+    "asset_id": "mu_7e9c1665",
+    "base_db": -18.0,
+    "duck_db": 20.0,
+    "attack_ms": 100.0,
+    "release_ms": 300.0,
+    "soundbite_policy": "duck",
+    "mute_preroll": 0.5,
+    "fade_in": 0.5,
+    "fade_out": 2.0,
+    "loop": true,
+    "loop_crossfade": 1.0,
+    "auto_seed": null
+  },
+  "sfx": [
+    {
+      "asset_id": "fx_8076043c",
+      "at_seconds": 0.0,
+      "gain_db": -14.0
+    }
+  ],
+  "watermark": {
+    "asset_id": "lg_336d30c8",
+    "width_ratio": 0.12,
+    "opacity": 0.85
+  },
+  "opening_title": {
+    "enabled": true,
+    "text": "ΔΟΚΙΜΑΣΤΙΚΟ ΡΕΠΟΡΤΑΖ",
+    "subtitle": "Συνθετικό υλικό",
+    "start": 0.0,
+    "duration": 3.0
+  },
+  "visual": {
+    "resize_mode": "blur",
+    "transition": "fade",
+    "fade_frames": 6,
+    "broll_shot_pref_seconds": 3.0,
+    "safe_inset": 0.05,
+    "lower_third_color": "#0b3d91"
+  },
+  "audio": {
+    "peak_target_db": -1.0,
+    "loudness_target_lufs": null,
+    "auto_fix_peaks": true,
+    "narration_gain_db": 0.0
+  },
+  "output": {
+    "profile": "web_horizontal",
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "overrides": {}
+  },
+  "export": {
+    "voice_over_wav": true,
+    "segment_wavs": false,
+    "segment_rundown": true
+  },
+  "export_directory": "exports",
+  "duration_override": false,
+  "duration_override_reason": "",
+  "acknowledged_warnings": [],
+  "last_render": {}
+}
