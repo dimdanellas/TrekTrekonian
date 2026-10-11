@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import functools
+import importlib.util
 import os
 import sys
 from pathlib import Path
@@ -15,12 +16,15 @@ _CANDIDATES = [
     # Metric-compatible / broad-coverage substitutes
     "LiberationSans-Regular.ttf", "DejaVuSans.ttf", "NotoSans-Regular.ttf", "FreeSans.ttf",
     "Helvetica.ttc", "segoeui.ttf", "tahoma.ttf",
+    # Android system fonts
+    "Roboto-Regular.ttf", "NotoSans-Regular.ttc",
 ]
 _BOLD = {
     "arial.ttf": "arialbd.ttf", "Arial.ttf": "Arial Bold.ttf",
     "LiberationSans-Regular.ttf": "LiberationSans-Bold.ttf", "DejaVuSans.ttf": "DejaVuSans-Bold.ttf",
     "NotoSans-Regular.ttf": "NotoSans-Bold.ttf", "FreeSans.ttf": "FreeSansBold.ttf",
     "segoeui.ttf": "segoeuib.ttf", "tahoma.ttf": "tahomabd.ttf",
+    "Roboto-Regular.ttf": "Roboto-Bold.ttf",
 }
 
 
@@ -31,6 +35,12 @@ def _font_dirs() -> list[Path]:
     elif sys.platform == "darwin":
         dirs += [Path("/Library/Fonts"), Path("/System/Library/Fonts"), Path("/System/Library/Fonts/Supplemental"),
                  Path.home() / "Library/Fonts"]
+    elif "ANDROID_ARGUMENT" in os.environ or "ANDROID_ROOT" in os.environ:
+        dirs.append(Path("/system/fonts"))
+        # Kivy bundles Roboto (Greek coverage, with a bold weight) inside the APK
+        spec = importlib.util.find_spec("kivy")
+        if spec and spec.origin:
+            dirs.append(Path(spec.origin).parent / "data" / "fonts")
     else:
         dirs += [Path("/usr/share/fonts"), Path("/usr/local/share/fonts"), Path.home() / ".fonts",
                  Path.home() / ".local/share/fonts"]

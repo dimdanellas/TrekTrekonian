@@ -29,6 +29,10 @@ sudo apt install python3-tk python3-venv ffmpeg libportaudio2
 
 Pinned, tested versions are listed in `requirements.txt` and `requirements-optional.txt`.
 
+## Tablet (Android) version
+
+A touch version for Android tablets shares this engine and the project format. It is built as a sideloadable APK with Buildozer, locally (`android/build_apk.sh`) or by the **Android APK** GitHub Actions workflow. See [docs/ANDROID.md](docs/ANDROID.md).
+
 ## Try the sample project
 
 The `examples/demo/` folder contains a ready-to-open project made from synthetic media only: test patterns, tones and placeholder names. There is no real footage and there are no quotations.
