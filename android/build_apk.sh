@@ -38,5 +38,9 @@ git -C "$P4A_DIR" checkout -q "$TAG"
 export APP_P4A_SOURCE_DIR="$PWD/$P4A_DIR"
 export VIRTUAL_ENV="$PWD/$VENV"  # Buildozer installs p4a's dependencies into this venv
 
+# A python-for-android build venv restored from the CI cache can carry a half-upgraded pip;
+# python-for-android recreates it, so drop it before each build.
+rm -rf .buildozer/android/platform/build-*/build/venv
+
 PATH="$PWD/$VENV/bin:$PATH" buildozer android debug
 ls -lh bin/*.apk
