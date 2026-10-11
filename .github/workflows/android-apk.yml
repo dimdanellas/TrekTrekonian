@@ -12,6 +12,9 @@ on:
       - "android/**"
       - ".github/workflows/android-apk.yml"
 
+permissions:
+  contents: write  # publishes the APK as a GitHub release for direct download on the tablet
+
 jobs:
   apk:
     runs-on: ubuntu-24.04
@@ -55,6 +58,31 @@ jobs:
         run: |
           grep -v '^#     ' build.log | tail -n 90 | cut -c1-300 | sed 's/%/%25/g' | awk 'BEGIN{ORS="%0A"} {print}' > tail.txt || true
           echo "::error title=Build log tail::$(cat tail.txt)"
+
+      - name: Check the APK contents
+        run: |
+          APK=$(ls bin/*.apk | head -1)
+          LIBS=$(unzip -l "$APK" | grep -oE "lib/[^ ]+/lib(ffmpegbin|ffprobebin|avcodec|python3[^ ]*)\.so" | sort -u | tr '\n' ' ')
+          echo "::notice title=APK contents::$(basename "$APK") $(du -h "$APK" | cut -f1) — $LIBS"
+          for lib in libffmpegbin.so libffprobebin.so; do
+            unzip -l "$APK" | grep -q "$lib" || { echo "::error::$lib is missing from the APK"; exit 1; }
+          done
+
+      - name: Publish as the "tablet-apk" release
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          APK=$(ls bin/*.apk | head -1)
+          cp "$APK" NewsPackageEditor.apk
+          NOTES="Sideloadable tablet build from ${GITHUB_SHA::7}. Open this page on the tablet and tap NewsPackageEditor.apk to install."
+          if gh release view tablet-apk >/dev/null 2>&1; then
+            gh release upload tablet-apk NewsPackageEditor.apk --clobber
+            gh release edit tablet-apk --notes "$NOTES" --target "$GITHUB_SHA"
+          else
+            gh release create tablet-apk NewsPackageEditor.apk --title "News Package Editor for tablets" \
+              --notes "$NOTES" --target "$GITHUB_SHA" --prerelease
+          fi
 
       - uses: actions/upload-artifact@v4
         with:

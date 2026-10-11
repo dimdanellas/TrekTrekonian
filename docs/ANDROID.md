@@ -19,7 +19,7 @@ Not on the tablet: local Whisper transcription (type statement subtitles in Mark
 
 The APK is built on Linux (x86_64). Two ways:
 
-**GitHub Actions.** Push the repository to GitHub and run the **Android APK** workflow (Actions tab → Android APK → Run workflow). It also runs on pushes to `main`/`master` that touch the app. Download `news-package-editor-apk` from the finished run. The first run compiles Python, Kivy, NumPy, Pillow and FFmpeg for ARM and can take over an hour; the cache makes later runs much faster.
+**GitHub Actions.** Push the repository to GitHub and run the **Android APK** workflow (Actions tab → Android APK → Run workflow). It also runs on pushes to `main`/`master` that touch the app. Each successful build is published as the **tablet-apk** release (`NewsPackageEditor.apk`), so the tablet can download it straight from the repository's Releases page; the run also keeps it as the `news-package-editor-apk` artifact. The first run compiles Python, Kivy, NumPy, Pillow and FFmpeg for ARM and can take over an hour; the cache makes later runs much faster.
 
 **Your own Linux machine.**
 
