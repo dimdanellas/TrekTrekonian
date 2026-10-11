@@ -32,5 +32,5 @@ if [ ! -d "$P4A_DIR" ]; then
 fi
 export APP_P4A_SOURCE_DIR="$PWD/$P4A_DIR"
 
-PATH="$PWD/$VENV/bin:$PATH" yes | buildozer android debug
+PATH="$PWD/$VENV/bin:$PATH" buildozer android debug
 ls -lh bin/*.apk

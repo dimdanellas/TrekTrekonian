@@ -45,7 +45,16 @@ jobs:
           restore-keys: buildozer-
 
       - name: Build APK
-        run: bash android/build_apk.sh
+        run: |
+          set -o pipefail
+          bash android/build_apk.sh 2>&1 | tee build.log
+
+      # Repeat the end of the build log as an annotation, readable through the API.
+      - name: Report build failure
+        if: failure()
+        run: |
+          tail -n 80 build.log | sed 's/%/%25/g' | awk 'BEGIN{ORS="%0A"} {print}' > tail.txt || true
+          echo "::error title=Build log tail::$(cat tail.txt)"
 
       - uses: actions/upload-artifact@v4
         with:
