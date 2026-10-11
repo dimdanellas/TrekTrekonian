@@ -23,13 +23,18 @@ if [ ! -x "$VENV/bin/buildozer" ]; then
 fi
 
 # Pin python-for-android to a released version instead of its moving master branch.
-P4A_DIR=".buildozer-p4a/python_for_android-$P4A_VERSION"
-if [ ! -d "$P4A_DIR" ]; then
-  mkdir -p .buildozer-p4a
-  "$VENV/bin/pip" download -q --no-deps --no-binary :all: "python-for-android==$P4A_VERSION" -d .buildozer-p4a
-  tar -xzf ".buildozer-p4a/python_for_android-$P4A_VERSION.tar.gz" -C .buildozer-p4a
-  "$VENV/bin/pip" install -q -e "$P4A_DIR"
+# (A git checkout, not the PyPI sdist: the sdist leaves out files some recipes need.)
+P4A_DIR=".buildozer-p4a/python-for-android"
+if [ ! -d "$P4A_DIR/.git" ]; then
+  rm -rf "$P4A_DIR"
+  git clone -q https://github.com/kivy/python-for-android.git "$P4A_DIR"
 fi
+TAG=$(git -C "$P4A_DIR" tag -l | grep -E "^v?${P4A_VERSION%%.*}\.0?$(echo $P4A_VERSION | cut -d. -f2)\.0?$(echo $P4A_VERSION | cut -d. -f3)$" | head -1)
+if [ -z "$TAG" ]; then
+  echo "python-for-android release $P4A_VERSION not found; tags are:"; git -C "$P4A_DIR" tag -l | tail -5; exit 1
+fi
+git -C "$P4A_DIR" checkout -q "$TAG"
+"$VENV/bin/pip" install -q -e "$P4A_DIR"
 export APP_P4A_SOURCE_DIR="$PWD/$P4A_DIR"
 export VIRTUAL_ENV="$PWD/$VENV"  # Buildozer installs p4a's dependencies into this venv
 
